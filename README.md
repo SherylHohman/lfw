@@ -46,7 +46,17 @@ COMMANDS:
 GLOBAL OPTIONS:
    --site value        Site to access [$LFW_SITE]
    --config value      Local by Flywheel configuration directory (default: "~/Library/Application Support/Local by Flywheel") [$LFW_CONFIG]
-   --dockerdir value   Directory containing docker binaries (default: "/Applications/Local by Flywheel.app/Contents/Resources/extraResources/virtual-machine/vendor/docker/osx") [$LFW_DOCKER_DIR]
+   --dockerdir value   [$LFW_DOCKER_DIR]
+                        Directory containing docker binaries 
+                        (default: "/Applications/Local by Flywheel.app/Contents/Resources/extraResources/virtual-machine/vendor/docker/osx") [$LFW_DOCKER_DIR]
+   
+                       Windows directory *might* be: 
+                       "C:\Users\<username>\AppData\Local\Programs\local-by-flywheel\resources\extraResources\virtual-machine\vendor\docker\windows\docker.exe"
+                       (where <username> is name used to log into your PC. In my case, it's "sh" or "i")
+                       (for me, it seems to be:
+                       C:\Users\sh>"C:\Users\sh\AppData\Local\Programs\local-by-flywheel\resources\extraResources\virtual-machine\vendor\docker\windows\docker.exe")
+                       NOTE: Wondows has 3 other directories for FlywheelLocal
+                       
    --dockername value  Docker instance name (default: "local-by-flywheel") [$LFW_DOCKER_NAME]
    --help, -h          show help
    --version, -v       print the version
